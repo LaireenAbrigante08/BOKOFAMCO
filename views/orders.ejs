@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Orders</title>
+</head>
+<body>
+  <h1>Orders</h1>
+  <ul>
+    <% orders.forEach(order => { %>
+      <li>Order ID: <%= order.order_id %> - Total: $<%= order.total_amount %></li>
+    <% }); %>
+  </ul>
+</body>
+</html>
